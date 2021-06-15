@@ -2,7 +2,9 @@ const Airline = require('../models/airline')
 
 const createAirline = async (req, res) => {
     try{
-        const airline = await new Airline(req.body);
+        console.log(req.body)
+        const airline = await new Airline(req.body)
+        ;
         await airline.save();
         return res.status(201).json({
             airline

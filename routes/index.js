@@ -16,8 +16,8 @@ router.get("/airlines", controllers.getAllAirlines)
 
 router.get("/airlines/:id", controllers.getAirlineById)
 
-router.put("/airlines:id", controllers.updateAirline)
+router.put("/airlines/:id", controllers.updateAirline)
 
-router.delete("/airlines:id", controllers.deleteAirline)
+router.delete("/airlines/:id", controllers.deleteAirline)
 
 module.exports = router;
